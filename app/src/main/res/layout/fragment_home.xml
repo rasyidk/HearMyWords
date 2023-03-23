@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/maincolor">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/mainmargin"
+                android:layout_marginTop="@dimen/mainmargin"
+                android:layout_marginEnd="@dimen/mainmargin"
+                android:layout_marginBottom="@dimen/mainmargin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fr_hm_tv_etname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MASKURRRR"
+                        android:textColor="@color/white"
+
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="XXXXXX"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    app:cardBackgroundColor="@color/secondcolorgreen"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/mainmargin"
+                    android:layout_marginTop="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="@dimen/mainmargin"
+                    android:orientation="horizontal"
+                    android:layout_weight="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/mainmargin"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/thirdcolorgrey"
+
+                        app:cardCornerRadius="25dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_above="@id/home_cardleft"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_launcher_background"
+                                        android:layout_margin="@dimen/mainmargin"/>
+                                </RelativeLayout>
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/home_cardleft"
+                                    app:cardBackgroundColor="@color/maincolor"
+                                    android:layout_width="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_height="100dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:padding="@dimen/mainmargin"
+                                        android:text="Learn Sign Language"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="23dp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/mainmargin"
+                        app:cardCornerRadius="25dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/thirdcolorgrey">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_above="@id/home_cardright"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_launcher_background"
+                                        android:layout_margin="@dimen/mainmargin"/>
+                                </RelativeLayout>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/home_cardright"
+                                    app:cardBackgroundColor="@color/maincolor"
+                                    android:layout_width="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_height="100dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Speaking Test"
+                                        android:textColor="@color/white"
+                                        android:padding="@dimen/mainmargin"
+                                        android:layout_alignParentBottom="true"
+                                        android:textSize="23dp"
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"/>
+                                </androidx.cardview.widget.CardView>
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="25dp"
+                    android:layout_height="150dp"
+                    app:cardBackgroundColor="@color/thirdcolorgrey"
+                    android:layout_marginTop="@dimen/mainmargin"
+                    android:layout_marginLeft="@dimen/mainmargin"
+                    android:layout_marginRight="@dimen/mainmargin"
+                    android:layout_marginBottom="100dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/thirdcolorgrey"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_launcher_background"
+                                android:layout_margin="@dimen/mainmargin"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_margin="@dimen/mainmargin"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Do you want to discus?"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lets find out the information by clicking this button!"/>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_marginTop="@dimen/mainmargin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="@dimen/mainmargin"
+                                    app:cardBackgroundColor="@color/maincolor">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:text="Explore The Community"
+                                        android:padding="7dp"/>
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
