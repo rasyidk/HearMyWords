@@ -33,8 +33,9 @@
                         android:layout_centerVertical="true"
                         android:layout_width="40dp"
                         android:padding="0dp"
+
                         android:layout_height="40dp"
-                        android:src="@drawable/ic_launcher_background"/>
+                        android:src="@drawable/ic_baseline_search_24"/>
 
                 </RelativeLayout>
                 <EditText
@@ -60,7 +61,7 @@
             android:id="@+id/video__rv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/mainmargin">
+            >
 
         </androidx.recyclerview.widget.RecyclerView>
 

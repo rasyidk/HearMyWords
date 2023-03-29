@@ -33,10 +33,11 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:fontFamily="@font/poppins_semibold"
                         android:id="@+id/fr_hm_tv_etname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="MASKURRRR"
+                        android:text="Hi!, Rasyid K"
                         android:textColor="@color/white"
 
                         android:textSize="30dp" />
@@ -45,7 +46,7 @@
                         android:layout_width="wrap_content"
 
                         android:layout_height="wrap_content"
-                        android:text="XXXXXX"
+                        android:text="Welcome Back!"
                         android:textColor="@color/white" />
                 </LinearLayout>
 
@@ -71,7 +72,51 @@
                     app:cardBackgroundColor="@color/secondcolorgreen"
                     android:layout_height="150dp"
                     android:layout_margin="@dimen/mainmargin"
-                    android:layout_marginTop="0dp"/>
+                    android:layout_marginTop="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="fitXY"
+                            android:padding="0dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/deafpict"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="150dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/mainmargin"
+                                android:layout_marginLeft="@dimen/mainmargin"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Deaf"
+                                    android:textSize="@dimen/mainmargin"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textColor="@color/white"/>
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="'Deaf' people mostly have profound hearing loss, which implies very little or no hearing"
+                                   android:textColor="@color/white"
+                                   android:fontFamily="@font/poppins"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -102,11 +147,16 @@
                                     android:layout_above="@id/home_cardleft"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
+
                                     <ImageView
+
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:src="@drawable/ic_launcher_background"
-                                        android:layout_margin="@dimen/mainmargin"/>
+                                        android:layout_marginStart="@dimen/mainmargin"
+                                        android:layout_marginTop="@dimen/mainmargin"
+                                        android:layout_marginEnd="@dimen/mainmargin"
+                                        android:layout_marginBottom="@dimen/mainmargin"
+                                        android:src="@drawable/icon_book" />
                                 </RelativeLayout>
                                 <androidx.cardview.widget.CardView
                                     android:id="@+id/home_cardleft"
@@ -116,6 +166,7 @@
                                     android:layout_height="100dp">
 
                                     <TextView
+                                        android:fontFamily="@font/poppins_semibold"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentBottom="true"
@@ -153,11 +204,15 @@
                                     android:layout_above="@id/home_cardright"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent">
+
                                     <ImageView
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:src="@drawable/ic_launcher_background"
-                                        android:layout_margin="@dimen/mainmargin"/>
+                                        android:layout_marginStart="@dimen/mainmargin"
+                                        android:layout_marginTop="@dimen/mainmargin"
+                                        android:layout_marginEnd="@dimen/mainmargin"
+                                        android:layout_marginBottom="@dimen/mainmargin"
+                                        android:src="@drawable/icon_speak" />
                                 </RelativeLayout>
 
                                 <androidx.cardview.widget.CardView
@@ -167,6 +222,7 @@
                                     android:layout_alignParentBottom="true"
                                     android:layout_height="100dp">
                                     <TextView
+                                        android:fontFamily="@font/poppins_semibold"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="Speaking Test"
@@ -211,8 +267,11 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/ic_launcher_background"
-                                android:layout_margin="@dimen/mainmargin"/>
+                                android:layout_marginStart="@dimen/mainmargin"
+                                android:layout_marginTop="@dimen/mainmargin"
+                                android:layout_marginEnd="@dimen/mainmargin"
+                                android:layout_marginBottom="@dimen/mainmargin"
+                                android:src="@drawable/icon_comunity" />
 
                         </RelativeLayout>
 
@@ -225,7 +284,9 @@
                             <LinearLayout
                                 android:layout_centerVertical="true"
                                 android:layout_width="wrap_content"
-                                android:layout_margin="@dimen/mainmargin"
+                                android:layout_marginTop="@dimen/mainmargin"
+                                android:layout_marginBottom="@dimen/mainmargin"
+                                android:layout_marginRight="@dimen/mainmargin"
                                 android:orientation="vertical"
                                 android:layout_height="wrap_content">
 

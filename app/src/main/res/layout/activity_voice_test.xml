@@ -1,9 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".VoiceTestActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/mainmargin"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24_white"
+            />
+
+        <RelativeLayout
+            android:background="@color/maincolor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Test"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/mainmargin"
+        android:layout_marginRight="@dimen/mainmargin"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/voicetest__tv_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="1/24"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/mainmargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardBackgroundColor="@color/greyvoice"
+            app:cardCornerRadius="@dimen/mainmargin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/mainmargin"
+                android:layout_marginBottom="@dimen/mainmargin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/voicetest__tv_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingLeft="@dimen/mainmargin"
+                    android:paddingRight="@dimen/mainmargin"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/voicetest__tv_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingLeft="@dimen/mainmargin"
+                    android:paddingRight="@dimen/mainmargin"
+                    android:textColor="@color/fourthcolorgrey"
+                    android:textAlignment="center"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle">
+
+                    <ImageView
+                        android:id="@+id/voicetest__img_mic"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_mic_24_dark_blue"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/voicetest__cv_btnext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="@dimen/mainmargin"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/greyvoice"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:paddingRight="60dp"
+                        android:paddingLeft="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textSize="24dp"
+                        android:textColor="@color/fifthcolordarkblue"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textAlignment="center"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

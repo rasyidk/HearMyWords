@@ -10,4 +10,7 @@
     <color name="maincolor">#0076BE</color>
     <color name="secondcolorgreen">#48BF91</color>
     <color name="thirdcolorgrey">#DAE3EA</color>
+    <color name="fourthcolorgrey">#C2C0C0</color>
+    <color name="greyvoice">#F4F5F9</color>
+    <color name="fifthcolordarkblue">#202F4E</color>
 </resources>

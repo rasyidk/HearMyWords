@@ -34,7 +34,7 @@
                     android:layout_width="40dp"
                     android:padding="0dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_launcher_background"/>
+                    android:src="@drawable/ic_baseline_search_24"/>
 
             </RelativeLayout>
             <EditText
@@ -69,6 +69,7 @@
                 android:weightSum="2">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/module__cv_alphabet"
                     android:layout_marginRight="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -104,7 +105,7 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:layout_centerHorizontal="true"
-                                android:src="@mipmap/ic_launcher"/>
+                                android:src="@drawable/icon_alphabet"/>
                             </RelativeLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -112,6 +113,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/module__cv_action"
                     android:layout_marginLeft="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -147,7 +149,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
                                     android:layout_centerHorizontal="true"
-                                    android:src="@mipmap/ic_launcher"/>
+                                    android:src="@drawable/icon_action"/>
                             </RelativeLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -197,7 +199,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
                                     android:layout_centerHorizontal="true"
-                                    android:src="@mipmap/ic_launcher"/>
+                                    android:src="@drawable/icon_animal"/>
                             </RelativeLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -240,7 +242,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
                                     android:layout_centerHorizontal="true"
-                                    android:src="@mipmap/ic_launcher"/>
+                                    android:src="@drawable/icon_food"/>
                             </RelativeLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -290,7 +292,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
                                     android:layout_centerHorizontal="true"
-                                    android:src="@mipmap/ic_launcher"/>
+                                    android:src="@drawable/icon_region"/>
                             </RelativeLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -333,7 +335,7 @@
                                     android:layout_width="80dp"
                                     android:layout_height="80dp"
                                     android:layout_centerHorizontal="true"
-                                    android:src="@mipmap/ic_launcher"/>
+                                    android:src="@drawable/icon_response"/>
                             </RelativeLayout>
                         </androidx.appcompat.widget.LinearLayoutCompat>
 
